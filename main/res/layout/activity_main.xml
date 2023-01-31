@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    android:backgroundTintMode="multiply"
+    android:hapticFeedbackEnabled="true"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/abril_fatface"
+        android:text="@string/photo_map"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/textcolorblack"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/gridLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#3C000000"
+        app:columnCount="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/btnOpenCamera"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/lilac"
+            android:contentDescription="@string/camera_button"
+            android:cropToPadding="false"
+            android:hapticFeedbackEnabled="true"
+            android:onClick="openCamera"
+            android:scaleType="center"
+            app:srcCompat="@android:drawable/ic_menu_camera" />
+
+        <ImageButton
+            android:id="@+id/btnOpenMap"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/yellow"
+            android:contentDescription="@string/map_button"
+            android:cropToPadding="false"
+            android:hapticFeedbackEnabled="true"
+            android:onClick="openMap"
+            android:scaleType="center"
+            app:srcCompat="@android:drawable/ic_menu_mapmode" />
+
+        <ImageButton
+            android:id="@+id/btnOpenGallery"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/yellow"
+            android:contentDescription="@string/gallery_button"
+            android:cropToPadding="false"
+            android:hapticFeedbackEnabled="true"
+            android:onClick="openGallery"
+            android:scaleType="center"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+        <ImageButton
+            android:id="@+id/btnOpenSettings"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:backgroundTint="@color/lilac"
+            android:contentDescription="@string/settings_button"
+            android:cropToPadding="false"
+            android:hapticFeedbackEnabled="true"
+            android:onClick="openSettings"
+            android:scaleType="center"
+            app:srcCompat="@android:drawable/ic_menu_preferences" />
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

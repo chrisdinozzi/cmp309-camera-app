@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Photo Map</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="external_storage_read_permission_denied_can_not_load_images">External Storage Read Permission denied. Can not load images.</string>
+    <string name="no_images_found">No Images Found</string>
+    <string name="photo_map">Photo Map</string>
+    <string name="camera_button">Camera Button</string>
+    <string name="settings_button">Settings Button</string>
+    <string name="gallery_button">Gallery Button</string>
+    <string name="map_button">Map Button</string>
+    <string name="photo_map_is_an_app_created_for_educational_purposes">Photo Map is an app created for educational purposes.</string>
+    <string name="shutter_noise">Shutter Noise</string>
+    <string name="photo_quality">Photo Quality</string>
+    <string name="camera_click">Camera Click</string>
+    <string name="quack">Quack</string>
+    <string name="high_larger_files">High (Larger Files)</string>
+    <string name="medium">Medium</string>
+    <string name="low_smaller_files">Low (Smaller Files)</string>
+    <string name="view_on_map">View on Map</string>
+    <string name="image_1">Image 1</string>
+    <string name="image_2">Image 2</string>
+    <string name="image_3">Image 3</string>
+    <string name="tap_to_view_in_gallery">Tap to view in Gallery</string>
+    <string name="image">Image</string>
+</resources>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="lilac">#ede7f6</color>
+    <color name="white">#ffffff</color>
+    <color name="darklilac">#bbb5c3</color>
+    <color name="yellow">#fffde7</color>
+    <color name="darkyellow">#cccab5</color>
+    <color name="textcolorblack">#000000</color>
+</resources>

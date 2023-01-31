@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <TextView
+        android:id="@+id/txtAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/photo_map_is_an_app_created_for_educational_purposes"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:columnCount="2"
+        app:layout_constraintBottom_toTopOf="@+id/txtAbout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:rowCount="2"
+        app:useDefaultMargins="true">
+
+        <TextView
+            android:id="@+id/tvShutterNoise"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:text="@string/shutter_noise"
+            android:textColor="@color/textcolorblack"
+            android:textColorHint="@color/textcolorblack"
+            android:textColorLink="@color/textcolorblack" />
+
+        <TextView
+            android:id="@+id/txtQuality"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:text="@string/photo_quality"
+            android:textColor="@color/textcolorblack"
+            android:textColorHint="@color/textcolorblack"
+            android:textColorLink="@color/textcolorblack" />
+
+        <RadioGroup
+            android:id="@+id/rgShutterSound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:checkedButton="@id/rbCameraClick">
+
+            <RadioButton
+                android:id="@+id/rbCameraClick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/darklilac"
+                android:onClick="onShutterRadioClicked"
+                android:text="@string/camera_click"
+                android:textColorLink="#000000"
+                app:useMaterialThemeColors="true" />
+
+            <RadioButton
+                android:id="@+id/rbQuack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/darklilac"
+                android:onClick="onQuackRadioClicked"
+                android:text="@string/quack" />
+
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rgPhotoFormat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:checkedButton="@id/rbHigh">
+
+            <RadioButton
+                android:id="@+id/rbHigh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/darklilac"
+                android:onClick="onHighRadioClicked"
+                android:text="@string/high_larger_files" />
+
+            <RadioButton
+                android:id="@+id/rbMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/darklilac"
+                android:onClick="onMediumRadioClicked"
+                android:text="@string/medium" />
+
+            <RadioButton
+                android:id="@+id/rbLow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:buttonTint="@color/darklilac"
+                android:onClick="onLowRadioClicked"
+                android:text="@string/low_smaller_files" />
+        </RadioGroup>
+
+    </androidx.gridlayout.widget.GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

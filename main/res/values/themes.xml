@@ -1,0 +1,22 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PhotoMap" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/lilac</item>
+        <item name="colorPrimaryVariant">@color/darklilac</item>
+        <item name="colorOnPrimary">@color/textcolorblack</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/yellow</item>
+        <item name="colorSecondaryVariant">@color/darkyellow</item>
+        <item name="colorOnSecondary">@color/textcolorblack</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" >@color/darklilac</item>
+        <item name="android:windowBackground">@color/yellow</item>
+    </style>
+
+    <!--No title bar, view takes up entire screen-->
+    <style name="Theme.PhotoMap.NoTitleBar" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>
